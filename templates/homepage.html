@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Redirecionador de Links</h1>
+    <form method="POST" action="{{ url_for('homepage') }}">
+        <h3>Link original</h3>
+        <input type="url" required placeholder="http://meulink.com" name="link-original">
+        <h3>Caminho do Link</h3>
+        <input type="text" required placeholder="/caminho-do-link" name="caminho-do-link">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
